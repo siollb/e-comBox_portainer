@@ -6,7 +6,8 @@ services:
     restart: always
     container_name: "portainer-proxy"
     ports:
-      - "${DOCKER_IP}:8000:80"
+      - "${DOCKER_IP_TOUT}:8000:80"
+      - "${DOCKER_IP_HOST}:8000:80"
     networks:
       - local
 
