@@ -37,7 +37,8 @@ services:
 
 networks:
   local:
-    driver: bridge
+    external:
+      name: bridge_e-combox
 
 volumes:
   portainer-data: {}
